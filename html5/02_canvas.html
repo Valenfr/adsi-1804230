@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Canvas HTML5</title>
+</head>
+<body>
+	<h2>Cuadrado</h2>
+	<canvas id="cuadrado"></canvas>
+	<h2>Rectangulo</h2>
+	<canvas id="rectangulo"></canvas>
+	<h2>Triangulo</h2>
+	<canvas id="triangulo"></canvas>
+	<h2>Circulo</h2>
+	<canvas id="circulo"></canvas>
+	<h2>Corazon</h2>
+	<canvas id="corazon"></canvas>
+	<h2>texto</h2>
+	<canvas id="texto"></canvas>
+
+
+
+
+
+
+
+	<br><br>
+	<h1>Rectangulo</h1>
+	<canvas id="rectangulo"></canvas>
+	<script>	
+		// Rectangulo ----------------------------------------------
+	 var	canvas			=	document.getElementById('rectangulo');	
+	 var	ctx						=	canvas.getContext('2d');	
+	 ctx.fillStyle='#d00';	
+	 ctx.fillRect(0,0,400,400)
+	</script>
+	<br><br>
+	<h2>Cuadrado</h2>
+	<canvas id="cuadrado"></canvas>
+	<script>
+		// Cuadrado ----------------------------------------------
+	 var	canvas			=	document.getElementById('cuadrado');	
+	 var	ctx						=	canvas.getContext('2d');	
+	 ctx.fillStyle='#d00';	
+	 ctx.fillRect(0,0,100,100)
+	</script>
+<br><br>
+	<h3>Triangulo</h3>
+	<canvas id="triangulo"></canvas>
+	<script>
+	    //Triangulo --------------------------
+	var canvas = document.getElementById(´triangulo´);
+	var ctx = triangulo.getElementById(´2d´);
+	ctx.fillStyle = ´#d00´;
+	ctx.beginPath ();
+	ctx.moveTo(10, 110);
+	ctx.lineTo(110, 10);
+	ctx.lineTo(210, 110);
+	ctx.fill(); 
+</script>
+<br><br>
+	<h4>Circulo</h4>
+	<canvas id="circulo"></canvas>
+	<script>
+		//circulo --------------------------
+	var canvas = document.getElementById(´circulo´);
+	var ctx = Circulo.getElementById(´2d´);
+	ctx.fillStyle = ´#d00´;
+	ctx.beginPath ();
+	ctx.arc(60, 60, 60, 0, Math.PI*2, true);
+	ctx.closePath();
+	ctx.fill();
+<br><br>
+	<h5>texto</h5>
+	<canvas id="texto"></canvas>
+	<script>
+		//Texto ---------------------------------
+	var canvas = document.getElementById(´Texto´);
+	var canvas = texto.getContext(´2d´);
+	ctx.fillStyle = ´#d00´;
+	ctx.font = "60px Tahoma"
+	ctx. fillText("ADSI",20,80);
+</script>
+
+	
+	
+
+</body>
+</html>
