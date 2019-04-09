@@ -1,2 +1,2 @@
-var nombre = "Jeremias Spirngfield";
-console.log("Bienvenido: "+nombre);
+var nombre = "Jeremias Springfield";
+console.log("Binvenido: "+nombre);

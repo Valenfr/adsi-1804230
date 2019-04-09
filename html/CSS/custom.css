@@ -1,4 +1,4 @@
-h1{
+h1 {
 	background-color: crimson;
 	border-radius: 175px;
 	color: white;
@@ -7,7 +7,7 @@ h1{
 	line-height: 8em;
 	margin: 120px auto;
 	text-align: center;
-	transition: all 0.5s ease-in;
+	transition: all 1s ease-in;
 	width: 250px;
 }
 h1:hover {

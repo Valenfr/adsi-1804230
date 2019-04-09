@@ -1,3 +1,3 @@
 var nombre = document.getElementById('nombre');
-var pregunta = prompt('Cuál es su nombre ? ');
-nombre.innerHTML = pregunta;
+var respuesta = prompt('Cuál es su nombre ?');
+nombre.innerHTML = respuesta;
