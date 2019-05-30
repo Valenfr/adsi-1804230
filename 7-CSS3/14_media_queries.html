@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Media Quieres</title>
+	<style>
+		* {
+			transition: all 0.5s;
+		}
+		body {
+			background-color: #013571;
+			font: 16px Tahoma;
+		}
+		section.main {
+			border: 10px solid #0177db;
+			color: rgba(255, 255, 255, .6);
+			margin: 20px auto;
+			padding: 20px;
+			width: 960px;
+		}
+		section.main div.logo {
+			background: url(imagenes/pepsi01.png)no-repeat center;
+			background-size: contain;
+			margin: 0px auto;
+			height: 300px;
+			width: 700px;
+		}
+		section.main h1 span.r2,
+		section.main h1 span.r3, {
+			display: none;
+		}
+		@media (max-width: 1024px) {
+			section.main {
+				width: 640px;
+			}
+			section.main h1 span.r1,
+			section.main h1 span.r3 {
+				display: none;
+			}
+			section.main h1 span.r2 {
+				display: inline;
+			}
+			section.main div.logo {
+				background: url(imagenes/pepsi02.png)no-repeat center;
+				height: 340px;
+				width: 340px;
+			}
+		}
+		@media (max-width: 720px) {
+			section.main {
+				width: 440px;
+			}
+			section.main h1 span.r1,
+			section.main h1 span.r2 {
+				display: none;
+			}
+			section.main h1 span.r3 {
+				display: inline;
+			}
+			section.main div.logo {
+				background: url(imagenes/pepsi03.png)no-repeat center;
+				height:340px;
+				width: 340px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<section class="main">
+		<div class="logo"></div>
+		<h1>
+			Media Quieres
+			<span class="r1">( 1024px )</span>
+			<span class="r2">( 720px )</span>
+			<span class="r3">( 440px )</span>
+		</h1>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt veniam sunt voluptatum deserunt hic recusandae velit fugit sapiente quasi, obcaecati, corporis amet cumque deleniti libero autem nemo excepturi voluptas veritatis? Fugit enim cum voluptatem, recusandae, ipsa iure itaque optio voluptate odit, temporibus velit illum officia architecto eum corporis sit voluptatibus magnam neque? Atque quis incidunt in tempora nemo quas expedita delectus aliquid ut explicabo fuga quod, tenetur ipsa inventore animi! Possimus accusamus dolorum autem earum atque et fugit ratione deserunt reprehenderit, nihil impedit voluptatum rem expedita, facilis, itaque quam asperiores! Eaque fuga sapiente cumque doloremque quae animi repudiandae modi ex eius magnam excepturi alias impedit nobis, sed cupiditate quam ea possimus rem earum vitae quas? Nemo veniam porro sapiente quos vero ipsam iste perspiciatis repudiandae fuga quasi optio facilis repellat nihil deleniti, consectetur doloremque doloribus nobis ut unde cupiditate error nesciunt? Ratione earum maiores voluptate pariatur cumque vero, iusto ad non cum tempora sunt, quis facilis dolor excepturi atque voluptatibus, voluptatem dolorum dicta. Nisi vero, odio. Omnis voluptates ipsum excepturi magnam eaque iure voluptatum saepe facere numquam officia vitae, amet quas quos, voluptate modi! Iure illo, magni omnis nisi libero tempora ratione, nihil fugit, voluptates aperiam impedit cupiditate labore culpa.
+		</p>
+	</section>
+</body>
+</html>

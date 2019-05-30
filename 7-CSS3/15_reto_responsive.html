@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Reto Responsive</title>
+	<style>
+		body {
+			font: 16px arial;
+		}
+		main {
+			margin: 0px auto;
+			width: 1280px;
+			padding: 24px;
+		}
+		header div.logo {
+			background: url(imagenes/logo_mickey_y_sus_amigos.jpg)no-repeat center;
+			height: 200px;
+		}
+		section.boxes div {
+			display: inline-block;
+			height: 260px;
+			margin-right: 50px;
+			position: relative;
+			width: 260px;
+			transition: all 5s;
+		}
+		section.boxes div: first-child { 
+			margin-left: 50px;
+		}
+		section.boxes div: last-child {
+			margin-right: 20px;
+		}
+		section.boxes div.box1 {
+			background: url(imagenes/mickey.png)no-repeat center;
+		}
+		section.boxes div.box2 {
+			background: url(imagenes/minnie.png)no-repeat center;
+		}
+		section.boxes div.box3 {
+			background: url(imagenes/pluto.jpg)no-repeat center;
+		}section.boxes div.box4 {
+			background: url(imagenes/goofy.jpg)no-repeat center;
+		}
+		section.boxes div:hover {
+			background-size: 100%;
+		}
+		section.boxes div p {
+			background-color: rgba(0, 0, 0, .1);
+			color: rgba(128, 128, 128, .9);
+			bottom: 0px;
+			margin: 0px;
+			padding: 20px;
+			position: absolute;
+			width: 220px;
+		}
+		article {
+			height: 300px;
+			width: 1200px;
+			margin: 0px auto;
+		}
+		article div.Figura {
+			background:url(imagenes/d3.jpg) no-repeat;
+			background-size: contain;
+			transition: all .5s;
+			height: 280px;
+			width: 280px;
+			background-size: 100%;
+		}
+		article div.Figura:hover {
+			transform: rotate(15deg) scale(2);
+		}
+		article div.Texto {
+			width: 500px;
+			height: 300px;
+			margin-left: 350px;
+		}
+		article div.Figura,
+		article div.Texto {
+			display: inline-block;
+			vertical-align: top;
+		}
+		article {
+			height: 300px;
+			width: 1200px;
+			margin: 0px auto;
+		}
+		article div.Figura2 {
+			background:url(imagenes/donald.jpeg)no-repeat;
+			background-size: contain;
+			transition: all .5s;
+			height: 280px;
+			width: 280px;
+			background-size: 100%;
+		}
+		article div.Figura2:hover {
+			transform: rotate(15deg) scale(2);
+		}
+		article div.Texto2 {
+			width: 500px;
+			height: 300px;
+			margin-left: 350px;
+		}
+		article div.Figura2,
+		article div.Texto2 {
+			display: inline-block;
+			vertical-align: top;
+		}
+		@media (max-width: 1024px;) {
+			section.main {
+				width: 640px;
+			}
+		article.span h1 span.main,
+		article.span h1 span.article2 {
+			display: none;
+		}
+		article.span h1 span.article1 {
+			display: inline;
+		}
+		section.main {
+			background: url(imagenes/logo_mickey_y_sus_amigos.jpg)no-repeat center;
+			height: 340px;
+			width: 340px;
+			}
+		}
+		@media (max-width: 720px;){
+			section.main {
+				width: 440px;
+			}
+			article.span h1 span.main,
+			article.span h1 span.article1 {
+				display: none;
+			}
+			article.span h1 span.article2 {
+				display: inline;
+			}
+			section.main {
+				background: url(imagenes/logo_mickey_y_sus_amigos.jpg) no-repeat center;
+				height: 340px;
+				width: 340px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<main>
+		<header>
+			<div class="logo"></div>
+		</header>
+		<section class="boxes">
+			<div class="box1">
+				<p>Mickey Mouse</p>
+			</div>
+			<div class="box2">
+				<p>Minnie</p>
+			</div>
+			<div class="box3">
+				<p>Pluto</p>
+			</div>
+			<div class="box4">
+				<p>Goofy</p>
+			</div>
+		</section>
+	</main>
+			<article>
+				<div class="Figura"></div>
+				<div class="Texto">
+		  		<h1>
+		  			Media Queries
+		  			<span class="main">( 1024px )</span>
+		  			<span class="article1">( 720px )</span>
+		  			<span class="article2">( 440px )</span>
+		  		</h1>
+				<h2>Daisy</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis consequatur, nisi nulla accusantium sapiente unde provident! Ducimus autem repellat consectetur vel minima veritatis iusto, officia adipisci maxime. Consectetur possimus rerum odit est repellendus aut sit accusamus in molestias, qui iusto error veritatis eos dolorem amet dolor, aliquid architecto modi nihil.</p></div>
+			</article>
+			<article>
+				<div class="Figura2"></div>
+				<div class="Texto2">
+			  	<div id="centeralign">
+				<h2>Donald</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis consequatur, nisi nulla accusantium sapiente unde provident! Ducimus autem repellat consectetur vel minima veritatis iusto, officia adipisci maxime. Consectetur possimus rerum odit est repellendus aut sit accusamus in molestias, qui iusto error veritatis eos dolorem amet dolor, aliquid architecto modi nihil.</p></div>
+			</article>
+</body>
+</html>

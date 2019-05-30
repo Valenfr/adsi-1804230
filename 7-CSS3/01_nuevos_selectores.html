@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Nuevos Selectores</title>
+	<style>
+		ul {
+			width: 400px;
+		}
+		ul li {
+			padding: 10px;
+			margin: 2px;
+		}
+		ul.nth li:nth-child(3) {
+			background-color: #dc1740;
+			color: #fff;
+		}
+		ul.nth li:last-child(2) {
+			background-color: #3f8c50;
+			color: #fff;
+		}
+		ul.child li:first-child,
+		ul.child li:last-child {
+			background-color: #89397f;
+			color: #fff;
+		}
+		article {
+			padding: 20px;
+			width: 360px;
+		}
+		#inicio:target,
+		#portafolio:target,
+		#contacto:target {
+			background-color: #5676d2;
+			color: #fff;
+		}
+		article.amarillo p::selection {
+
+			background-color: #ff0;
+		}
+		article.azul p::selection {
+			background-color: #00a;
+		}
+		article.rojo p::selection {
+			background-color: #a00;
+		}
+	</style>
+</head>
+<body>
+	<h1>Nuevos Selectores</h1>
+	<h3>:nth-child(n) | nth-last-child(n)</h3>
+	<ul class="nth">
+		<li>html</li>
+		<li>css</li>
+		<li>javascript</li>
+		<li>python</li>
+		<li>sql</li>
+	</ul>
+</body>
+</html>
